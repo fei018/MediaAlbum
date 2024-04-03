@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <PreserveCompilationReferences>true</PreserveCompilationReferences>
+    <Nullable>disable</Nullable>  
+ </PropertyGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\MediaAlbum.Model\MediaAlbum.Model.csproj" />
+  </ItemGroup >
+</Project>
+

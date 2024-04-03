@@ -1,0 +1,19 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace MediaAlbum.Model.InfoManage
+{
+    /// <summary>
+    /// 站點配置信息
+    /// </summary>
+	[Table("Info_SiteConfig")]
+    [Display(Name = "站點配置信息")]
+    public class SiteConfigInfo
+    {
+        [Display(Name = "媒體文件根路徑")]
+        [Comment("媒體文件根路徑")]
+        [Required(ErrorMessage = "Validate.{0}required")]
+        public string MediaRootPath { get; set; }
+    }
+}
