@@ -14,6 +14,10 @@
     <None Remove="Areas\AlbumManage\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\MediaAlbum.Shared\TestPage.razor" Link="TestPage.razor" />
+  </ItemGroup>
+
 
 
   <ItemGroup>

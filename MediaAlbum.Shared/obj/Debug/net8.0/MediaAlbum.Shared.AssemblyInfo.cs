@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MediaAlbum.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48a60b737cb0dbd15fc1235ffaec48524054c91f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MediaAlbum.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MediaAlbum.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

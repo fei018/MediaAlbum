@@ -1,5 +1,4 @@
-﻿@page "/console"
-@inherits LayoutComponentBase
+﻿@inherits LayoutComponentBase
 @using System.Reflection
 @using System.Globalization
 @inject WtmBlazorContext wtmblazor;
@@ -210,7 +209,7 @@
     {
         List<BootstrapBlazor.Components.MenuItem> menus = null;
         menus = new List<BootstrapBlazor.Components.MenuItem> { };
-        menus.Add(new BootstrapBlazor.Components.MenuItem() { Text = wtmblazor.Localizer["Sys.Home"], Icon = "fa fa-fw fa-home", Url = "/", Match = NavLinkMatch.All });
+        menus.Add(new BootstrapBlazor.Components.MenuItem() { Text = wtmblazor.Localizer["Sys.Home"], Icon = "fa fa-fw fa-home", Url = "/index", Match = NavLinkMatch.All });
         if (wtmblazor.ConfigInfo.IsQuickDebug == true)
         {
             var pages = wtmblazor.GetAllPages();

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\MediaAlbum.Client.csproj": {}
+    "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\MediaAlbum.Client.csproj": {}
   },
   "projects": {
-    "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\MediaAlbum.Client.csproj": {
+    "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\MediaAlbum.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\MediaAlbum.Client.csproj",
+        "projectUniqueName": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\MediaAlbum.Client.csproj",
         "projectName": "MediaAlbum.Client",
-        "projectPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\MediaAlbum.Client.csproj",
-        "packagesPath": "C:\\Users\\fei\\.nuget\\packages\\",
-        "outputPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\obj\\",
+        "projectPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\MediaAlbum.Client.csproj",
+        "packagesPath": "C:\\Users\\Fei\\.nuget\\packages\\",
+        "outputPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj": {
-                "projectPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj"
+              "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj": {
+                "projectPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj"
               }
             }
           }
@@ -111,20 +111,20 @@
         }
       }
     },
-    "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj": {
+    "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj",
+        "projectUniqueName": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj",
         "projectName": "MediaAlbum.Model",
-        "projectPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj",
-        "packagesPath": "C:\\Users\\fei\\.nuget\\packages\\",
-        "outputPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Model\\obj\\",
+        "projectPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj",
+        "packagesPath": "C:\\Users\\Fei\\.nuget\\packages\\",
+        "outputPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -182,20 +182,20 @@
         }
       }
     },
-    "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj": {
+    "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj",
+        "projectUniqueName": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj",
         "projectName": "MediaAlbum.Shared",
-        "projectPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj",
-        "packagesPath": "C:\\Users\\fei\\.nuget\\packages\\",
-        "outputPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Shared\\obj\\",
+        "projectPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Shared\\MediaAlbum.Shared.csproj",
+        "packagesPath": "C:\\Users\\Fei\\.nuget\\packages\\",
+        "outputPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -211,8 +211,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj": {
-                "projectPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj"
+              "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj": {
+                "projectPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj"
               }
             }
           }
@@ -273,20 +273,20 @@
         }
       }
     },
-    "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj": {
+    "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj",
+        "projectUniqueName": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj",
         "projectName": "MediaAlbum.ViewModel",
-        "projectPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj",
-        "packagesPath": "C:\\Users\\fei\\.nuget\\packages\\",
-        "outputPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.ViewModel\\obj\\",
+        "projectPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.ViewModel\\MediaAlbum.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\Fei\\.nuget\\packages\\",
+        "outputPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -302,8 +302,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj": {
-                "projectPath": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj"
+              "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj": {
+                "projectPath": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Model\\MediaAlbum.Model.csproj"
               }
             }
           }

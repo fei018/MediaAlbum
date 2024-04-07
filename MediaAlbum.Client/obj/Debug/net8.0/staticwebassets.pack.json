@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\obj\\Debug\\net8.0\\compressed\\p2a8tskzzp.gz",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\obj\\Debug\\net8.0\\compressed\\miuqj5id5z.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MediaAlbum.Client.styles.css",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MediaAlbum.Client.styles.css",
       "PackagePath": "staticwebassets\\MediaAlbum.Client.styles.css"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\obj\\Debug\\net8.0\\service-worker-assets.js",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\obj\\Debug\\net8.0\\service-worker-assets.js",
       "PackagePath": "staticwebassets\\service-worker-assets.js"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\obj\\Debug\\net8.0\\service-worker\\service-worker.published.js",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\obj\\Debug\\net8.0\\service-worker\\service-worker.published.js",
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\appsettings.json",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\appsettings.json",
       "PackagePath": "staticwebassets\\appsettings.json"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\fav.ico",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\fav.ico",
       "PackagePath": "staticwebassets\\fav.ico"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\index.html",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\manifest.json",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
     },
     {
-      "Id": "C:\\Fei\\code project\\Github\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\pwaicon.png",
+      "Id": "C:\\CodeProject\\GitHub\\MediaAlbum\\MediaAlbum.Client\\wwwroot\\pwaicon.png",
       "PackagePath": "staticwebassets\\pwaicon.png"
     },
     {

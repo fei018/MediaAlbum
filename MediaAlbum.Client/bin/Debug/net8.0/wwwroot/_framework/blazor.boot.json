@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "MediaAlbum.Client",
   "resources": {
-    "hash": "sha256-nH+TCV7Rs8EzqznsMEhr60PdbcvkSqmIdfPVOFRIHgw=",
+    "hash": "sha256-v7++04IJ99MJKkEXyjXV/9F01JbZ6gKHXR7/LD/KZfA=",
     "jsModuleNative": {
-      "dotnet.native.8.0.3.2q7b19hym3.js": "sha256-D4sYBYmDfH/YekgYRgX959/2RG6k28sJSHmcsn+iikk="
+      "dotnet.native.8.0.3.9kx0u8lp8t.js": "sha256-D4sYBYmDfH/YekgYRgX959/2RG6k28sJSHmcsn+iikk="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.3.vesih6immc.js": "sha256-eQgtmRxLcbxYmADDa49CHs/GuJ7nM6d/UFWo4EVhuIw="
+      "dotnet.runtime.8.0.3.mhks38lela.js": "sha256-eQgtmRxLcbxYmADDa49CHs/GuJ7nM6d/UFWo4EVhuIw="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-eVeGwMx+BfzNeU727VmCADSEBzGFWGkvJAX0XZdSVkQ="
@@ -294,23 +294,23 @@
       "mscorlib.wasm": "sha256-/xjZuJwCmantx5vGyH5ZZ8keySSTeu+YHKQRJbZzcuM=",
       "netstandard.wasm": "sha256-vuFKmCGJbyv85DrzI6S1ZvCikuhIllH6hqbXIL+fUAA=",
       "System.Private.CoreLib.wasm": "sha256-SZkozEDkHEFN0VaDmhl2HOenGaqTOmHqEGkraz3Aejc=",
-      "MediaAlbum.Model.wasm": "sha256-c+wjAboKj/jd95OLm42ZZlurPzFJKBLGC1hsC4ysUMI=",
-      "MediaAlbum.Shared.wasm": "sha256-l4ISJn1eOu/+XLPLhU6K+7GNxO6WPkQXJpTXQ5yrKJo=",
-      "MediaAlbum.ViewModel.wasm": "sha256-0tkX+oNDBI2q+nj68vl3BPePN/wa+o++CepBMTVtzlA=",
-      "MediaAlbum.Client.wasm": "sha256-1vNtkACKQkAghhLRxNIfe/UxWgcVySxoA71sn1HVcoA="
+      "MediaAlbum.Model.wasm": "sha256-26y/KzTpK86nwvMMvasYSMYx5I6nXSw5OoneF5glItU=",
+      "MediaAlbum.Shared.wasm": "sha256-+MCrYWeE5C5qJh+JQ99PwMiNT+d+cVSPyC4bQB4UZDo=",
+      "MediaAlbum.ViewModel.wasm": "sha256-q1la0FV4bmUiU7E3R5Xi0O6SN9dONQxXEOETzaWZI3Y=",
+      "MediaAlbum.Client.wasm": "sha256-Y5pJRA6W5O3wDLHcGRSR+l/d63uQ8e9uAQWI737+QfE="
     },
     "pdb": {
-      "MediaAlbum.Shared.pdb": "sha256-4L6/sPWqOuy0nMzXv9Ja4SNFFPQrmgr+WDWgrszZIrA=",
-      "MediaAlbum.Model.pdb": "sha256-KZSyKvsORheY85WiUAUsvW+XkkqYjkcZIYspYlwPJXI=",
-      "MediaAlbum.ViewModel.pdb": "sha256-IcE9jhO4KzG51O844RQv08PSgjzFm6vtk8+T0fs2F4c=",
-      "MediaAlbum.Client.pdb": "sha256-mXcHQo6r6FVdAbVdMt4CpQb680nD4QDl28ubFBNC6f8="
+      "MediaAlbum.Shared.pdb": "sha256-caHELIA/73+KrqeGEXcaF3ui4mSH/dWzFJt6MO9l6pQ=",
+      "MediaAlbum.Model.pdb": "sha256-2LcXCf6ktaA1xftea5D0aRXwbxTkTbCNSOdYNjp1oHo=",
+      "MediaAlbum.ViewModel.pdb": "sha256-ajfgHBACbHHNLb17LX6A7wlDi8AVNNUiyNIxdrTUmfs=",
+      "MediaAlbum.Client.pdb": "sha256-5YNcbsDHxpo5En7r/ZMMwzFilgS6SN6shp3jKZ0SE9c="
     },
     "satelliteResources": {
       "en": {
-        "MediaAlbum.Shared.resources.wasm": "sha256-ARfTHpMHMt2n3WF3bZCKBg44uqVR9EGwpGlkrdlDfEU="
+        "MediaAlbum.Shared.resources.wasm": "sha256-PBs4qFDEJqNavMSk73u4dmmsZT4G0xd+erF1CB5GtYc="
       },
       "zh": {
-        "MediaAlbum.Shared.resources.wasm": "sha256-xHkSTlal1NB4sfqBqtaWL/yAuztcC0iSnQlrr6jw5NQ="
+        "MediaAlbum.Shared.resources.wasm": "sha256-9yUQMqYHmELhNlzah9UPPt92X1g5fEnvJz+0PTYMOWc="
       }
     }
   },
