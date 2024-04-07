@@ -17,20 +17,20 @@ namespace MediaAlbum.Model.InfoManage
         [Display(Name = "專輯Id")]
         [Comment("專輯Id")]
         [Required(ErrorMessage = "Validate.{0}required")]
-        public Guid AlbumInfoId { get; set; }
+        public Guid? AlbumInfoId { get; set; }
 
-        [Display(Name = "專輯")]
-        [Comment("專輯")]
-        public AlbumInfo Album { get; set; }
+        //[Display(Name = "專輯")]
+        //[Comment("專輯")]
+        //public AlbumInfo Album { get; set; }
 
         [Display(Name = "媒體文件Id")]
         [Comment("媒體文件Id")]
         [Required(ErrorMessage = "Validate.{0}required")]
-        public Guid MediaFileInfoID { get; set; }
+        public Guid? MediaFileInfoID { get; set; }
 
-        [Display(Name = "媒體文件")]
-        [Comment("媒體文件")]
-        public MediaFileInfo MediaFile { get; set; }
+        //[Display(Name = "媒體文件")]
+        //[Comment("媒體文件")]
+        //public MediaFileInfo MediaFile { get; set; }
     }
 
 }

@@ -98,7 +98,8 @@
         IsPublicPage();
         if (args.Path.ToLower().StartsWith("login"))
         {
-            NavigationManager.NavigateTo("/");
+            NavigationManager.NavigateTo("/console");
+            return;
         }
     }
 

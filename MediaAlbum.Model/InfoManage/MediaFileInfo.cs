@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
+using WalkingTec.Mvvm.Core;
 
 namespace MediaAlbum.Model.InfoManage
 {
@@ -14,7 +11,7 @@ namespace MediaAlbum.Model.InfoManage
     /// </summary>
     [Table("Info_MediaFile")]
     [Display(Name = "媒體文件信息")]
-    public class MediaFileInfo
+    public class MediaFileInfo : BasePoco
     {
         [Display(Name = "媒體文件名")]
         [Comment("媒體文件名")]
@@ -22,5 +19,12 @@ namespace MediaAlbum.Model.InfoManage
         public string FileName { get; set; }
 
 
+        [Display(Name = "專輯文件關聯Id")]
+        [Comment("專輯文件關聯Id")]
+        public Guid? AlbumFileRelatedId { get; set; }
+
+        [Display(Name = "專輯文件關聯")]
+        [Comment("專輯文件關聯")]
+        public AlbumFileRelated AlbumFileRelated { get; set; }
     }
 }

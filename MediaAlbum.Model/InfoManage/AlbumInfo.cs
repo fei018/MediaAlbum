@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using WalkingTec.Mvvm.Core;
@@ -23,14 +24,9 @@ namespace MediaAlbum.Model.InfoManage
         public string Description { get; set; }
 
 
-        //[Display(Name = "專輯文件關聯Id")]
-        //[Comment("專輯文件關聯Id")]
-        //[Required(ErrorMessage = "Validate.{0}required")]
-        //public Guid AlbumFileRelatedId { get; set; }
-
-        //[Display(Name = "專輯文件關聯")]
-        //[Comment("專輯文件關聯")]
-        //public AlbumFileRelated AlbumFileRelated { get; set; }
+        [Display(Name = "專輯文件關聯集合")]
+        [Comment("專輯文件關聯集合")]
+        public List<AlbumFileRelated> AlbumFileRelatedList { get; set; } = new List<AlbumFileRelated> { };
     }
 
 }
