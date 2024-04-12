@@ -98,9 +98,9 @@
         IsPublicPage();
         if (args.Path.ToLower().StartsWith("login"))
         {
-            NavigationManager.NavigateTo("/console");
+            NavigationManager.NavigateTo("/console",true);
             return;
-        }
+        } 
     }
 
     private void IsPublicPage()
