@@ -9,6 +9,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MediaAlbum.Model\MediaAlbum.Model.csproj" />
-  </ItemGroup >
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
 </Project>
 

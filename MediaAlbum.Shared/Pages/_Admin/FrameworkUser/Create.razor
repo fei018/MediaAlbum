@@ -48,14 +48,16 @@
 @code {
     [Parameter]
     public string id { get; set; }
+
     [Parameter]
     public string[] ids { get; set; }
+
     private FrameworkUserVM Model = new FrameworkUserVM();
+
     private ValidateForm vform { get; set; }
+
     private async Task Submit(EditContext context)
-    {
-                        
-        
+    {      
         await PostsForm(vform, "/api/_Admin/FrameworkUser/Create", (s) => "Sys.OprationSuccess");
     }
     public void OnClose()

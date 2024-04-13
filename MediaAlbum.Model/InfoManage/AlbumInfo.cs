@@ -11,7 +11,7 @@ namespace MediaAlbum.Model.InfoManage
     /// </summary>
 	[Table("Info_Album")]
 
-    [Display(Name = "_Model.AlbumInfo")]
+    [Display(Name = "專輯信息")]
     public class AlbumInfo : BasePoco
     {
         [Display(Name = "專輯名稱")]
@@ -24,9 +24,10 @@ namespace MediaAlbum.Model.InfoManage
         public string Description { get; set; }
 
 
-        [Display(Name = "專輯文件關聯集合")]
-        [Comment("專輯文件關聯集合")]
-        public List<AlbumFileRelated> AlbumFileRelatedList { get; set; } = new List<AlbumFileRelated> { };
+
+        [Display(Name = "專輯媒體文件集合")]
+        [Comment("專輯媒體文件集合")]
+        public List<MediaFileInfo> MediaFileInfoList { get; set; } = [];
     }
 
 }

@@ -87,10 +87,14 @@
 @code {
     [Parameter]
     public string id { get; set; }
+
     [Parameter]
     public string[] ids { get; set; }
+
     private FrameworkUserListVM Model = new FrameworkUserListVM();
+
     private Table<MediaAlbum.ViewModel._Admin.FrameworkUserVMs.FrameworkUser_View> FrameworkUserListVMdataTable;
+
     private async Task FrameworkUserListVMDoSearch()
     {
         await FrameworkUserListVMdataTable.QueryAsync();
