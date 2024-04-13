@@ -99,11 +99,13 @@
     {
         await FrameworkUserListVMdataTable.QueryAsync();
     }
+
     private async Task<QueryData<MediaAlbum.ViewModel._Admin.FrameworkUserVMs.FrameworkUser_View>> FrameworkUserListVMOnSearchFrameworkUser(QueryPageOptions opts)
     {
             
         return await StartSearch<MediaAlbum.ViewModel._Admin.FrameworkUserVMs.FrameworkUser_View>("/api/_Admin/FrameworkUser/SearchFrameworkUser", Model.Searcher, opts);
     }
+
     private async Task OnCreateClick()
     {
         var id = FrameworkUserListVMdataTable.SelectedRows?.Select(x => x.ID.ToString())?.FirstOrDefault();
@@ -195,8 +197,6 @@
     
     protected override async Task OnInitializedAsync()
     {
-        
-        
 
         await base.OnInitializedAsync();
     }

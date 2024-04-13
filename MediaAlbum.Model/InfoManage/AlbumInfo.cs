@@ -12,7 +12,7 @@ namespace MediaAlbum.Model.InfoManage
 	[Table("Info_Album")]
 
     [Display(Name = "專輯信息")]
-    public class AlbumInfo : BasePoco
+    public class AlbumInfo : TreePoco<AlbumInfo>
     {
         [Display(Name = "專輯名稱")]
         [Comment("專輯名稱")]
