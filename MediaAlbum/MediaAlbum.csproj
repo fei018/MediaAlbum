@@ -23,7 +23,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.3" />
     <PackageReference Include="WalkingTec.Mvvm.Mvc" Version="8.0.8" />
-   <ProjectReference Include="..\MediaAlbum.Client\MediaAlbum.Client.csproj" />
    <ProjectReference Include="..\MediaAlbum.Shared\MediaAlbum.Shared.csproj" />
     <ProjectReference Include="..\MediaAlbum.DataAccess\MediaAlbum.DataAccess.csproj" />
 </ItemGroup>
