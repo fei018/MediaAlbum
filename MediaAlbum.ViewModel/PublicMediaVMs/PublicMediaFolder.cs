@@ -15,5 +15,7 @@ namespace MediaAlbum.ViewModel.PublicMediaVMs
 
         [Display(Name = "路徑")]
         public string FullPath { get; set; }
+
+        public string ParentPath {  get; set; }
     }
 }

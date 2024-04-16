@@ -41,6 +41,7 @@ namespace MediaAlbum.ViewModel.PublicMediaVMs
                         FullPath = folder,
                     };
 
+                    f.ParentPath = f.FullPath.Substring(0, f.FullPath.LastIndexOf("\\"));
                     MediaFolderList.Add(f);
                 }
             }
@@ -66,7 +67,7 @@ namespace MediaAlbum.ViewModel.PublicMediaVMs
                         MineType = "video/mp4",
                     };
 
-                    mp4.StaticWebPath = $"{SiteConfigInfoService.SiteHostName}/share{mp4.FileRelativeParentPath}{mp4.FileName}".Replace('\\', '/');
+                    mp4.StaticWebPath = Uri.EscapeUriString($"{SiteConfigInfoService.SiteHostName}{SiteConfigInfoService.CustomStaticWebPath}{mp4.FileRelativeParentPath}{mp4.FileName}".Replace('\\', '/'));
 
                     MediaFileMP4List.Add(mp4);
                 }
@@ -92,7 +93,7 @@ namespace MediaAlbum.ViewModel.PublicMediaVMs
                         MineType = "audio/mpeg",
                     };
 
-                    mp3.StaticWebPath = $"{SiteConfigInfoService.SiteHostName}/share{mp3.FileRelativeParentPath}{mp3.FileName}".Replace('\\', '/');
+                    mp3.StaticWebPath = Uri.EscapeUriString($"{SiteConfigInfoService.SiteHostName}{SiteConfigInfoService.CustomStaticWebPath}{mp3.FileRelativeParentPath}{mp3.FileName}".Replace('\\', '/'));
 
                     MediaFileMP3List.Add(mp3);
                 }

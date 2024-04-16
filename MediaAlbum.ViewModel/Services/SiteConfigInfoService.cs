@@ -11,13 +11,15 @@ namespace MediaAlbum.ViewModel.Services
 {
     public class SiteConfigInfoService
     {
-        public static string MediaRootPath { get; private set; } = "C:\\Fei\\code project\\web";
+        public const string CustomStaticWebPath = "/fileget";
+
+        public static string MediaRootPath { get; private set; } = "C:\\CodeProject\\web";
 
         public static string SiteHostName { get; set; } = "http://localhost:34620";
 
 
         public static void SetSiteConfig(WTMContext wtm)
-        {
+        { 
             var site = wtm.DC.Set<SiteConfigInfo>().ToList().FirstOrDefault();
 
             if (site == null)

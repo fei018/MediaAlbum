@@ -3,52 +3,42 @@
 @attribute [Public]
 
 
-@if (MediaFolderList.Count > 0)
+@if (!string.IsNullOrEmpty(ParentFolderPath))
 {
-    @foreach (var folder in MediaFolderList)
-    {
-        <Row ItemsPerRow="ItemsPerRow.Six">
-            <div style="border-style:solid" @ondblclick="(arg)=>QueryFolder(folder,arg)">
+    <div @ondblclick="()=>ReturnParentFolder()">
+        <i class="fa-solid fa-turn-up"></i>
+    </div>
+}
+
+@foreach (var folder in MediaFolderList)
+{
+    <div class="card " style="max-width: 400px;" @ondblclick="()=>EnterSubFolder(folder)">
+        <div class="row g-0">
+            <div class="col-md-4">
                 <i class="fa-solid fa-folder"></i>
-                <span>@folder.FolderName</span>
             </div>
-        </Row>
-    }
-}
-else
-{
-    <div>上一頁</div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <p class="card-text">@folder.FolderName</p>
+                </div>
+            </div>
+        </div>
+    </div>
 }
 
-@if (MediaFileMP4List.Count > 0)
+@foreach (var mp4 in MediaFileMP4List)
 {
-    @foreach (var mp4 in MediaFileMP4List)
-    {
-        <video controls width="250">
-            <source src="@mp4.StaticWebPath" type="@mp4.MineType"/>
-        </video>
-    }
-
-}
-else
-{
-    
+    <video controls width="250">
+        <source src="@mp4.StaticWebPath" type="@mp4.MineType" />
+    </video>
 }
 
 
-@if (MediaFileMP3List.Count > 0)
+@foreach (var mp3 in MediaFileMP3List)
 {
-    @foreach (var mp3 in MediaFileMP3List)
-    {
-        <audio controls>
-            <source src="@mp3.StaticWebPath" >
-        </audio>
-    }
-
-}
-else
-{
-    
+    <audio controls>
+        <source src="@mp3.StaticWebPath">
+    </audio>
 }
 
 @code {
@@ -59,6 +49,11 @@ else
 
     private List<PublicMediaFolder> MediaFolderList { get; set; } = new();
 
+    private string ParentFolderPath { get; set; }
+
+    private string CurrentFolderPath { get; set; }
+
+    private System.Collections.Generic.Stack<string> PathStack { get; set; }
 
     private PublicMediaScanVM MediaScanVM { get; set; }
 
@@ -67,6 +62,8 @@ else
 
     protected override Task OnInitializedAsync()
     {
+        PathStack = new();
+
         MediaScanVM = new();
         MediaScanVM.ScanFolders(SiteConfigInfoService.MediaRootPath);
         MediaScanVM.ScanFiles(SiteConfigInfoService.MediaRootPath);
@@ -78,9 +75,8 @@ else
         return base.OnInitializedAsync();
     }
 
-    private void QueryFolder(PublicMediaFolder folder, EventArgs args)
+    private void EnterSubFolder(PublicMediaFolder folder)
     {
-
         MediaScanVM.ScanFolders(folder.FullPath);
         MediaScanVM.ScanFiles(folder.FullPath);
 
@@ -88,7 +84,47 @@ else
         MediaFileMP4List = MediaScanVM.MediaFileMP4List;
         MediaFileMP3List = MediaScanVM.MediaFileMP3List;
 
-        StateHasChanged();
+        ParentFolderPath = folder.ParentPath;
+        PathStack.Push(folder.ParentPath);
     }
 
+    private void ReturnParentFolder()
+    {
+        if (PathStack.Count > 0)
+        {
+            ParentFolderPath = PathStack.Pop();
+
+            MediaScanVM.ScanFolders(ParentFolderPath);
+            MediaScanVM.ScanFiles(ParentFolderPath);
+
+            MediaFolderList = MediaScanVM.MediaFolderList;
+            MediaFileMP4List = MediaScanVM.MediaFileMP4List;
+            MediaFileMP3List = MediaScanVM.MediaFileMP3List;
+        }
+        else
+        {
+            ParentFolderPath = null;
+            return;
+        }
+
+
+        if (!string.IsNullOrEmpty(ParentFolderPath))
+        {
+            string root = SiteConfigInfoService.MediaRootPath.Trim().TrimEnd('\\').ToLower();
+            string parent = ParentFolderPath?.Trim()?.TrimEnd('\\')?.ToLower();
+
+            if (root == parent)
+            {
+                ParentFolderPath = null;
+
+                if (PathStack.Count > 0)
+                {
+                    PathStack.Clear();
+                    return;
+                }
+            }
+        }
+    }
+
+  
 }

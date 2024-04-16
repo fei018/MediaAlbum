@@ -115,7 +115,7 @@ namespace MediaAlbum
             app.UseStaticFiles(new StaticFileOptions()
             {
                 FileProvider = new PhysicalFileProvider(SiteConfigInfoService.MediaRootPath),
-                 RequestPath = "/share"
+                 RequestPath = SiteConfigInfoService.CustomStaticWebPath,
             });
 
             app.UseWtmStaticFiles();
