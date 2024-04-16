@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="..\MediaAlbum.Shared\Pages\InfoManage\MediaFileInfo\ScanFiles.razor.cs" Link="ScanFiles.razor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\MediaAlbum.Shared\TestPage.razor" Link="TestPage.razor" />
   </ItemGroup>
 

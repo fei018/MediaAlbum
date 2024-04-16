@@ -19,13 +19,18 @@ namespace MediaAlbum.Model.InfoManage
         [Required(ErrorMessage = "Validate.{0}required")]
         public string FileName { get; set; }
 
-        /// <summary>
-        /// 相對文件名, 不包含根路徑
-        /// </summary>
-        [Display(Name = "相對文件名")]
-        [Comment("相對文件名")]
+        [Display(Name = "文件擴展名")]
+        [Comment("文件擴展名")]
         [Required(ErrorMessage = "Validate.{0}required")]
-        public string FileRelativeName { get; set; }
+        public string FileExtention { get; set; }
+
+        /// <summary>
+        /// 相對父路徑, 不包含根路徑
+        /// </summary>
+        [Display(Name = "相對父路徑")]
+        [Comment("相對父路徑")]
+        [Required(ErrorMessage = "Validate.{0}required")]
+        public string FileRelativeParentPath { get; set; }
 
         [Display(Name = "媒體文件類別")]
         [Comment("媒體文件類別")]
@@ -42,15 +47,17 @@ namespace MediaAlbum.Model.InfoManage
         [Display(Name = "專輯信息")]
         [Comment("專輯信息")]
         public AlbumInfo AlbumInfo { get; set; }
+  
 
-
-        [NotMapped]
-        public string FileExtention
+        public static string GetFileRelativeParentPath(string mediaRootPath, string fileFullName)
         {
-            get
-            {
-                return string.IsNullOrEmpty(FileName) ? FileName : Path.GetExtension(FileName);
-            }
+            var path = fileFullName.Replace(mediaRootPath, "", StringComparison.OrdinalIgnoreCase);
+
+            var filename = Path.GetFileName(fileFullName);
+
+            path = path.Replace(filename, "", StringComparison.OrdinalIgnoreCase);
+
+            return path;
         }
     }
 }

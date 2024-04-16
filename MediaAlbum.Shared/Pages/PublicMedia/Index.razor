@@ -1,0 +1,94 @@
+﻿@page "/"
+@inherits BasePage
+@attribute [Public]
+
+
+@if (MediaFolderList.Count > 0)
+{
+    @foreach (var folder in MediaFolderList)
+    {
+        <Row ItemsPerRow="ItemsPerRow.Six">
+            <div style="border-style:solid" @ondblclick="(arg)=>QueryFolder(folder,arg)">
+                <i class="fa-solid fa-folder"></i>
+                <span>@folder.FolderName</span>
+            </div>
+        </Row>
+    }
+}
+else
+{
+    <div>上一頁</div>
+}
+
+@if (MediaFileMP4List.Count > 0)
+{
+    @foreach (var mp4 in MediaFileMP4List)
+    {
+        <video controls width="250">
+            <source src="@mp4.StaticWebPath" type="@mp4.MineType"/>
+        </video>
+    }
+
+}
+else
+{
+    
+}
+
+
+@if (MediaFileMP3List.Count > 0)
+{
+    @foreach (var mp3 in MediaFileMP3List)
+    {
+        <audio controls>
+            <source src="@mp3.StaticWebPath" >
+        </audio>
+    }
+
+}
+else
+{
+    
+}
+
+@code {
+
+    private List<PublicMediaFile> MediaFileMP3List { get; set; } = new();
+
+    private List<PublicMediaFile> MediaFileMP4List { get; set; } = new();
+
+    private List<PublicMediaFolder> MediaFolderList { get; set; } = new();
+
+
+    private PublicMediaScanVM MediaScanVM { get; set; }
+
+    private string Name{ get; set; }
+    private string Path { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+        MediaScanVM = new();
+        MediaScanVM.ScanFolders(SiteConfigInfoService.MediaRootPath);
+        MediaScanVM.ScanFiles(SiteConfigInfoService.MediaRootPath);
+
+        MediaFolderList = MediaScanVM.MediaFolderList;
+        MediaFileMP4List = MediaScanVM.MediaFileMP4List;
+        MediaFileMP3List = MediaScanVM.MediaFileMP3List;
+
+        return base.OnInitializedAsync();
+    }
+
+    private void QueryFolder(PublicMediaFolder folder, EventArgs args)
+    {
+
+        MediaScanVM.ScanFolders(folder.FullPath);
+        MediaScanVM.ScanFiles(folder.FullPath);
+
+        MediaFolderList = MediaScanVM.MediaFolderList;
+        MediaFileMP4List = MediaScanVM.MediaFileMP4List;
+        MediaFileMP3List = MediaScanVM.MediaFileMP3List;
+
+        StateHasChanged();
+    }
+
+}

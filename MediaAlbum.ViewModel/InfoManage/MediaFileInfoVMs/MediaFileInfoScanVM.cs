@@ -16,9 +16,9 @@ namespace MediaAlbum.ViewModel.InfoManage.MediaFileInfoVMs
 
         public string FileFullName {  get; set; }
 
-        public List<MediaFileInfoScanVM> MediaFileMP3List { get; set; }
+        public List<MediaFileInfo> MediaFileMP3List { get; set; }
 
-        public List<MediaFileInfoScanVM> MediaFileMP4List { get; set; }
+        public List<MediaFileInfo> MediaFileMP4List { get; set; }
 
         public void Scan()
         {
@@ -29,10 +29,12 @@ namespace MediaAlbum.ViewModel.InfoManage.MediaFileInfoVMs
                 MediaFileMP4List = new();
                 foreach (var item in mp4s)
                 {
-                    var mp4 = new MediaFileInfoScanVM()
+                    var mp4 = new MediaFileInfo()
                     {
                         FileName = Path.GetFileName(item),
-                        FileFullName = item
+                        FileRelativeParentPath = MediaFileInfo.GetFileRelativeParentPath(SiteConfigInfoService.MediaRootPath, item),
+                        FileType = MediaFileTypeEnum.Video,
+                        FileExtention = Path.GetExtension(item)
                     };
                     MediaFileMP4List.Add(mp4);
                 }
@@ -45,10 +47,12 @@ namespace MediaAlbum.ViewModel.InfoManage.MediaFileInfoVMs
                 MediaFileMP3List = new();
                 foreach (var item in mp3s)
                 {
-                    var mp3 = new MediaFileInfoScanVM()
+                    var mp3 = new MediaFileInfo()
                     {
                         FileName = Path.GetFileName(item),
-                        FileFullName = item
+                        FileRelativeParentPath = MediaFileInfo.GetFileRelativeParentPath(SiteConfigInfoService.MediaRootPath, item),
+                        FileType = MediaFileTypeEnum.Audio,
+                        FileExtention = Path.GetExtension(item)
                     };
                     MediaFileMP3List.Add(mp3);
                 }

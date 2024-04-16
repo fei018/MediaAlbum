@@ -12,14 +12,14 @@ namespace MediaAlbum.Model.InfoManage
     [Display(Name = "站點配置信息")]
     public class SiteConfigInfo : TopBasePoco
     {
-        [Display(Name = "媒體文件搜索根路徑")]
-        [Comment("媒體文件搜索根路徑")]
+        [Display(Name = "媒體文件根路徑")]
+        [Comment("媒體文件根路徑")]
         //[Required(ErrorMessage = "Validate.{0}required")]
         public string MediaRootPath { get; set; }
 
-        [Display(Name = "縮圖保存文件根路徑")]
-        [Comment("縮圖保存文件根路徑")]
+        [Display(Name = "站點主機名")]
+        [Comment("站點主機名")]
         //[Required(ErrorMessage = "Validate.{0}required")]
-        public string ThumbnailRootPath { get; set; }
+        public string SiteHostName { get; set; }
     }
 }
