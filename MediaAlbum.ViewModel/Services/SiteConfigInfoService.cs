@@ -13,7 +13,7 @@ namespace MediaAlbum.ViewModel.Services
     {
         public const string CustomStaticWebPath = "/fileget";
 
-        public static string MediaRootPath { get; private set; } = "C:\\CodeProject\\web";
+        public static string MediaRootPath { get; private set; } = "\\\\192.168.0.201\\BMSHFile\\Video\\整理中";
 
         public static string SiteHostName { get; set; } = "http://localhost:34620";
 

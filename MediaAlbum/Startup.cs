@@ -132,30 +132,40 @@ namespace MediaAlbum
             {
                 app.UseEndpoints(endpoints =>
                 {
-                    endpoints.MapBlazorHub();
-                    endpoints.MapRazorPages();
                     endpoints.MapControllerRoute(
                        name: "areaRoute",
                        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                    endpoints.MapAreaControllerRoute(
+                        name: "default",
+                        areaName: "FileShare",
+                        pattern: "{controller=Home}/{action=Index}/{id?}"
+                        );
+
                     endpoints.MapControllerRoute(
                         name: "default",
                         pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                    endpoints.MapBlazorHub();
+                    endpoints.MapRazorPages();
+
+                    
                     endpoints.MapFallbackToPage("/_Host");
                 });
             }
             else
             {
-                app.UseEndpoints(endpoints =>
-                {
-                    endpoints.MapRazorPages();
-                    endpoints.MapControllerRoute(
-                       name: "areaRoute",
-                       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-                    endpoints.MapControllerRoute(
-                        name: "default",
-                        pattern: "{controller=Home}/{action=Index}/{id?}");
-                    endpoints.MapFallbackToFile("index.html");
-                });
+                //app.UseEndpoints(endpoints =>
+                //{
+                //    endpoints.MapRazorPages();
+                //    endpoints.MapControllerRoute(
+                //       name: "areaRoute",
+                //       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                //    endpoints.MapControllerRoute(
+                //        name: "default",
+                //        pattern: "{controller=Home}/{action=Index}/{id?}");
+                //    endpoints.MapFallbackToFile("index.html");
+                //});
             }
             app.UseBlazorFrameworkFiles();
             app.UseWtmContext(true);

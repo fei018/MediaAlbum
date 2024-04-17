@@ -1,30 +1,36 @@
-﻿@page "/"
-@inherits BasePage
-@attribute [Public]
+﻿
+@* @inherits BasePage *@
+@* @attribute [Public] *@
 
 
 @if (!string.IsNullOrEmpty(ParentFolderPath))
 {
     <div @ondblclick="()=>ReturnParentFolder()">
-        <i class="fa-solid fa-turn-up"></i>
+        <div class="col-12 folder-up">
+            <Button IsBlock="true" Color="Color.Primary" Size="Size.ExtraLarge">
+                <i class="fa-solid fa-turn-up"></i>
+                <span>向上</span>
+            </Button>
+        </div>      
     </div>
 }
 
-@foreach (var folder in MediaFolderList)
-{
-    <div class="card " style="max-width: 400px;" @ondblclick="()=>EnterSubFolder(folder)">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <i class="fa-solid fa-folder"></i>
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <p class="card-text">@folder.FolderName</p>
-                </div>
+<div class="row g-3">
+    @foreach (var folder in MediaFolderList)
+    {
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-2" >
+            <div class="public-folder" @ondblclick="()=>EnterSubFolder(folder)">
+                <Card Color="Color.Primary" IsCenter="true">
+                    <BodyTemplate>
+                        <div class="folder-icon"><i class="fa-solid fa-folder"></i></div>
+                        <p class="card-text">@folder.FolderName</p>
+                    </BodyTemplate>
+                </Card>
             </div>
         </div>
-    </div>
-}
+       
+    }
+</div>
 
 @foreach (var mp4 in MediaFileMP4List)
 {
@@ -57,7 +63,7 @@
 
     private PublicMediaScanVM MediaScanVM { get; set; }
 
-    private string Name{ get; set; }
+    private string Name { get; set; }
     private string Path { get; set; }
 
     protected override Task OnInitializedAsync()
@@ -126,5 +132,5 @@
         }
     }
 
-  
+
 }

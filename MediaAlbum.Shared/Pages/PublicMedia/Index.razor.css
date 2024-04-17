@@ -1,0 +1,15 @@
+﻿
+.public-folder {
+    max-width: 130px;
+    cursor:pointer;
+    
+}
+
+    .public-folder .folder-icon {
+        font-size: 100px;
+    }
+
+.folder-up {
+    width:120px;
+    padding:5px;
+}
